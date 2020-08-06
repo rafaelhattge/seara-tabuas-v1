@@ -73,7 +73,7 @@ img {
 
 .apresenta {
   position: absolute;
-  top: 12.5%;
+  top: 10%;
   left: 50%;
   width: 80px;
   -ms-transform: translateX(-50%);
@@ -87,7 +87,7 @@ img {
 .flag-container {
   position: absolute;
   width: 100%;
-  top: 12.3%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -101,11 +101,21 @@ img {
   overflow: hidden;
 }
 
+.secondary-logo-container {
+  position: absolute;
+  width: 415px;
+  top: 35%;
+  left: 12%;
+}
+
 .home-seara-logo {
   position: absolute;
-  top: 25.8%;
+  top: 36%;
   right: 14%;
   width: 113px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .home-txt-container {
@@ -192,6 +202,11 @@ img {
   bottom: 2.7%;
   left: 6.4%;
   z-index: 2;
+}
+
+.product-container {
+  width: 82%;
+  margin: 0 auto;
 }
 
 .back-link-wrapper {
@@ -283,6 +298,10 @@ img {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   transform: translateX(100%);
+}
+
+.sec-logo-anim {
+  opacity: 0;
 }
 
 .logo-anim {
