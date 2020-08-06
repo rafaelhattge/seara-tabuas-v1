@@ -1,0 +1,367 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: #1b1512;
+  background-image: url(../../assets/img/home-bg.jpg);
+  background-size: cover;
+  overflow: hidden;
+  /* width: 768px;
+  height: 900px; */
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  /* width: 768px;
+  height: 900px; */
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  /* background-image: url(assets/F17_primeira-tela-ipad-totem.png); */
+  /* background-image: url(assets/home-bg.jpg); */
+  /* background-size: contain;
+  background-position: center; */
+  /* overflow: hidden; */
+}
+
+
+
+.apresenta {
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  width: 80px;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.flag-container {
+  position: absolute;
+  width: 100%;
+  top: 12.3%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.txt-mask {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-seara-logo {
+  position: absolute;
+  top: 25.8%;
+  right: 14%;
+  width: 113px;
+}
+
+.home-txt-container {
+  position: absolute;
+  width: 424px;
+  left: 50%;
+  top: 48.6%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.home-link {
+  position: absolute;
+  bottom: 33.4%;
+}
+
+.produtos-link {
+  left: 9.8%;
+}
+
+.produtos-link-wrapper {
+  width: 294px;
+  height: 40px;
+  background-color: #ed1c24;
+  border-radius: 25px;
+}
+
+.tabuas-link {
+  right: 9.8%;
+}
+
+.tabuas-link-wrapper {
+  width: 294px;
+  height: 40px;
+  background-color: #ed1c24;
+  border-radius: 25px;
+}
+
+.home-products-container {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  width: 600px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* PRODUCTS STYLES */
+.top-garlic-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+}
+
+.bottom-garlic-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+}
+
+.seara-logo-small {
+  position: absolute;
+  top: 2.7%;
+  right: 6%;
+  width: 74px;
+}
+
+.products-page-title {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 670px;
+}
+
+.back-link {
+  position: absolute;
+  bottom: 2.7%;
+  left: 6.4%;
+  z-index: 2;
+}
+
+.back-link-wrapper {
+  font-size: 0px;
+  width: 224px;
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 25px;
+}
+
+/* .slick-container {
+  position: absolute;
+}
+
+.slick-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-slide {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background: #fff;
+
+  Center slide text vertically
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.slick-container {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.slick-prev,
+.slick-next {
+  /* color: transparent; */
+  position: absolute;
+  top: 56%;
+  width: 40px;
+}
+
+.slick-prev {
+  left: 2%;
+}
+
+.slick-next {
+  right: 2%;
+}
+
+
+/* HOME ANIMATIONS */
+.apresenta-anim {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.flag-anim {
+  opacity: 0;
+  transform: scale(.8);
+}
+
+.txt-mask {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.flag-txt-anim {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.logo-anim {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  transform: scale(.8);
+}
+
+.logo-txt-anim {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.home-txt-anim {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.produtos-link-wrapper,
+.tabuas-link-wrapper {
+  opacity: 0;
+  /* transform: scale(.9); */
+}
+
+.link-txt-anim {
+  opacity: 0;
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+.products-anim {
+  opacity: 0;
+  transform: scale(.8);
+}
+
+/* PRODUCTS ANIMATIONS */
+.top-garlic {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  transform: scale(.8);
+  transform-origin: top left;
+}
+
+.small-logo-anim {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  transform: scale(.8);
+}
+
+.small-logo-txt-anim {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.bottom-garlic {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  transform: scale(.8);
+  transform-origin: bottom right;
+}
+
+.back-link-wrapper {
+  opacity: 0;
+}
+
+.back-txt-anim {
+  opacity: 0;
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px);
+}

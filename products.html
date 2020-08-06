@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container container-products">
+
+        <div class="top-garlic-wrapper">
+            <img src="assets/img/garlic-01.png" class="top-garlic">
+        </div>
+
+        <div class="seara-logo-small">
+            <img src="assets/img/logo-small-01.png" class="pos-r small-logo-anim">
+            <img src="assets/img/logo-small-02.png" class="pos-a small-logo-txt-anim">
+        </div>
+
+        <div class="products-page-title">
+            <img src="assets/img/conheca-produtos.png">
+        </div>
+
+        <div class="back-link">
+            <div class="back-link-wrapper">
+                <img src="assets/img/back-link.png" class="back-txt-anim">
+            </div>
+        </div>
+
+        <div class="bottom-garlic-wrapper">
+            <img src="assets/img/garlic-02.png" class="bottom-garlic">
+        </div>
+
+        <!-- SLICK CONTAINER -->
+        <div class="slick-container">
+            <div>
+                <img src="assets/img/product-01.png">
+                <img src="assets/img/product-02.png">
+                <img src="assets/img/product-03.png">
+            </div>
+            <div>
+                <img src="assets/img/product-01.png">
+                <img src="assets/img/product-02.png">
+                <img src="assets/img/product-03.png">
+            </div>
+            <div>
+                <img src="assets/img/product-01.png">
+                <img src="assets/img/product-02.png">
+                <img src="assets/img/product-03.png">
+            </div>
+            <div>
+                <img src="assets/img/product-01.png">
+                <img src="assets/img/product-02.png">
+                <img src="assets/img/product-03.png">
+            </div>
+        </div>
+    </div>
+    <!-- END OF SLICK CONTAINER -->
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick-container').slick({
+                dots: true
+            });
+        });
+    </script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
