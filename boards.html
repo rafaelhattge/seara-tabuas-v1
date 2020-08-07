@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tábuas</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container container-boards">
+
+        <div class="top-garlic-wrapper">
+            <img src="img/garlic-01.png" class="top-garlic">
+        </div>
+
+        <div class="seara-logo-small">
+            <img src="img/logo-small-01.png" class="pos-r small-logo-anim">
+            <img src="img/logo-small-02.png" class="pos-a small-logo-txt-anim">
+        </div>
+
+        <div class="products-page-title">
+            <img src="img/conheca-produtos.png" class="products-title">
+        </div>
+
+        <div class="back-link">
+            <div class="back-link-wrapper">
+                <img src="img/back-link.png" class="back-txt-anim">
+            </div>
+        </div>
+
+        <div class="bottom-garlic-wrapper">
+            <img src="img/garlic-02.png" class="bottom-garlic">
+        </div>
+
+        <!-- SLICK CONTAINER -->
+
+        <!-- END OF SLICK CONTAINER -->
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick-container').slick({
+                dots: true,
+                infinite: true,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+            });
+
+        });
+    </script>
+    <script src="js/gsap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

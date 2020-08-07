@@ -222,6 +222,10 @@ img {
   transform: translateY(-50%);
 }
 
+.slick-slide {
+  outline: none;
+}
+
 .slick-prev,
 .slick-next {
   /* color: transparent; */
@@ -252,6 +256,7 @@ img {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   list-style-type: none;
+  outline: none;
 }
 
 .slick-dots button {
@@ -263,6 +268,7 @@ img {
   border-radius: 100%;
   background-color: rgba(255, 255, 255, .2);
   font-size: 0px;
+  outline: none;
 }
 
 .slick-dots .slick-active button {
@@ -373,3 +379,7 @@ img {
 .slick-container {
   opacity: 0;
 }
+
+/* .product-container {
+  opacity: 0;
+} */

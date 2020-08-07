@@ -37,9 +37,22 @@ window.onload = function () {
             .to('.slick-container', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .5)
         productsPage.play();
 
+        // $('.slick-container').on('beforChange', function(event, slick, currentSlide, nextSlide) {
+        //     console.log(currentSlide);
+        //     setTimeout(function(){
+        //         gsap.to('.slick-active .product-container', .7, {y: 50, opacity: 1, stagger: .2})
+        //     }, 200)
+        // })
+
     } else if (document.querySelector('.container-boards')) {
         boardsPage
             .addLabel('start')
+            .to('.top-garlic, .bottom-garlic', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .1)
+            .to('.small-logo-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .2)
+            .to('.small-logo-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .3)
+            .to('.products-title', .7, {opacity: 1, ease: Power2.easeOut}, 'start+=' + .3)
+            .to('.back-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut, stagger: .2 }, 'start+=' + .5)
+            .to('.back-link-wrapper', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .6)
 
         boardsPage.play();
     }
