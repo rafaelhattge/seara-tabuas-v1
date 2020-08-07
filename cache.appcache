@@ -1,0 +1,47 @@
+CACHE MANIFEST
+# v1.0 : 07-08-2020
+ 
+CACHE:
+# pages
+index.html
+products.html
+boards.html
+ 
+# styles & scripts
+css/slick.css
+css/style.css
+js/jquery.min.js
+js/script.js
+js/gsap.js
+js/slick.min.js
+ 
+# images
+/favicon.ico
+img/apresenta.png
+img/back-link.png
+img/conheca-produtos.png
+img/flag.png
+img/flag-txt.png
+img/garlic-01.png
+img/garlic-02.png
+img/home-bg.jpg
+img/home-cta-produtos-txt.png
+img/home-cta-tabuas-txt.png
+img/home-products.png
+img/home-txt-1.png
+img/home-txt-2.png
+img/home-txt-3.png
+img/left-arrow.png
+img/logo-small-01.png
+img/logo-small-02.png
+
+img/right-arrow.png
+img/seara-logo-01.png
+img/seara-logo-02.png
+img/seara-logo-03.png
+img/sec-logo-01.png
+img/sec-logo-02.png
+ 
+NETWORK:
+ 
+FALLBACK:
