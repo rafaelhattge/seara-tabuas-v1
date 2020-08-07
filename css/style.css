@@ -27,7 +27,7 @@ ul {
 
 body {
   background-color: #1b1512;
-  background-image: url(../../assets/img/home-bg.jpg);
+  background-image: url(../img/home-bg.jpg);
   background-size: cover;
   overflow: hidden;
   /* width: 768px;
@@ -69,17 +69,12 @@ img {
   /* overflow: hidden; */
 }
 
-
-
 .apresenta {
   position: absolute;
   top: 10%;
   left: 50%;
   width: 80px;
-  -ms-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -90,7 +85,6 @@ img {
   top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   overflow: hidden;
 }
@@ -114,7 +108,6 @@ img {
   right: 14%;
   width: 113px;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -124,7 +117,6 @@ img {
   left: 50%;
   top: 48.6%;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -161,11 +153,17 @@ img {
   left: 50%;
   width: 600px;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 /* PRODUCTS STYLES */
+/* .container-products {
+  background-image: url(../img/F17_-tela-carpadio-digital-totem-produtos-1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
 .top-garlic-wrapper {
   position: absolute;
   top: 0;
@@ -192,7 +190,6 @@ img {
   top: 13%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 670px;
 }
@@ -205,8 +202,8 @@ img {
 }
 
 .product-container {
-  width: 82%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 0 auto 3vh auto;
 }
 
 .back-link-wrapper {
@@ -216,70 +213,66 @@ img {
   border-radius: 25px;
 }
 
-/* .slick-container {
-  position: absolute;
-}
-
-.slick-container {
-  width: 100%;
-  height: 100%;
-}
-
-.slick-slide {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  background: #fff;
-
-  Center slide text vertically
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
 .slick-container {
   position: absolute;
   width: 100%;
-  height: 600px;
-  top: 50%;
+  height: 60vh;
+  top: 58%;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
-
 }
 
 .slick-prev,
 .slick-next {
   /* color: transparent; */
   position: absolute;
-  top: 56%;
+  top: 43%;
   width: 40px;
 }
 
 .slick-prev {
-  left: 2%;
+  left: 5%;
+  z-index: 1;
 }
 
 .slick-next {
-  right: 2%;
+  right: 5%;
 }
 
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  width: 150px;
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  list-style-type: none;
+}
+
+.slick-dots button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, .2);
+  font-size: 0px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #FFF;
+}
 
 /* HOME ANIMATIONS */
 .apresenta-anim {
   opacity: 0;
   -webkit-transform: translateY(20px);
-  -moz-transform: translateY(20px);
   transform: translateY(20px);
 }
 
@@ -290,13 +283,11 @@ img {
 
 .txt-mask {
   -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 .flag-txt-anim {
   -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
   transform: translateX(100%);
 }
 
@@ -307,34 +298,29 @@ img {
 .logo-anim {
   opacity: 0;
   -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
   transform: scale(.8);
 }
 
 .logo-txt-anim {
   opacity: 0;
   -webkit-transform: translateY(20px);
-  -moz-transform: translateY(20px);
   transform: translateY(20px);
 }
 
 .home-txt-anim {
   opacity: 0;
   -webkit-transform: translateY(20px);
-  -moz-transform: translateY(20px);
   transform: translateY(20px);
 }
 
 .produtos-link-wrapper,
 .tabuas-link-wrapper {
   opacity: 0;
-  /* transform: scale(.9); */
 }
 
 .link-txt-anim {
   opacity: 0;
   -webkit-transform: translateY(8px);
-  -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
@@ -347,7 +333,6 @@ img {
 .top-garlic {
   opacity: 0;
   -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
   transform: scale(.8);
   transform-origin: top left;
 }
@@ -355,21 +340,22 @@ img {
 .small-logo-anim {
   opacity: 0;
   -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
   transform: scale(.8);
 }
 
 .small-logo-txt-anim {
   opacity: 0;
   -webkit-transform: translateY(20px);
-  -moz-transform: translateY(20px);
   transform: translateY(20px);
+}
+
+.products-title {
+  opacity: 0;
 }
 
 .bottom-garlic {
   opacity: 0;
   -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
   transform: scale(.8);
   transform-origin: bottom right;
 }
@@ -381,6 +367,9 @@ img {
 .back-txt-anim {
   opacity: 0;
   -webkit-transform: translateY(8px);
-  -moz-transform: translateY(8px);
   transform: translateY(8px);
+}
+
+.slick-container {
+  opacity: 0;
 }
