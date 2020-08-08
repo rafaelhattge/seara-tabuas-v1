@@ -3,6 +3,7 @@ CACHE MANIFEST
  
 CACHE:
 # pages
+https://rafaelhattge.github.io/seara-tabuas-v1/index.html
 index.html
 products.html
 boards.html
@@ -93,6 +94,6 @@ img/sec-logo-02.png
 favicon.ico
  
 NETWORK:
-*
+
 FALLBACK:
-index.html
+# index.html
