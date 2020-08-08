@@ -95,4 +95,4 @@ favicon.ico
 NETWORK:
 
 FALLBACK:
-index.html
+/index.html /index.html
