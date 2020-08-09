@@ -200,7 +200,7 @@ img {
   position: absolute;
   bottom: 2.7%;
   left: 6.4%;
-  z-index: 2;
+  z-index: 2000;
 }
 
 .product-container {
