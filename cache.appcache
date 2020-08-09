@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v1.6 : 08-08-2020
+# v1.8 : 08-08-2020
  
 CACHE:
 # pages
@@ -92,7 +92,9 @@ img/sec-logo-02.png
 favicon.ico
  
 NETWORK:
+*
 
 FALLBACK:
+https://rafaelhattge.github.io/seara-tabuas-v1 index.html
 https://rafaelhattge.github.io/seara-tabuas-v1/index.html index.html
 https://rafaelhattge.github.io/favicon.ico favicon.ico
