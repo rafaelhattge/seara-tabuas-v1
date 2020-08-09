@@ -8,7 +8,56 @@ var homePage = gsap.timeline({ paused: true });
 var productsPage = gsap.timeline({ paused: true });
 var boardsPage = gsap.timeline({ paused: true });
 
+$(document).ready(function () {
+
+    $('.slick-container').slick({
+        dots: true,
+        infinite: true,
+        prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+        nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+    });
+
+
+
+});
+
 window.onload = function () {
+    var slickContainer = document.querySelector('.slick-container');
+    var slickTrack = document.querySelector('.slick-track')
+    // slickContainer.addEventListener('touchmove', function () {
+    //     var style = window.getComputedStyle(slickTrack);
+    //     var matrix = new WebKitCSSMatrix(style.webkitTransform);
+    //     console.log('translateX: ', matrix.m41);
+    //     console.log(matrix.m41 % 768)
+    //     gsap.to('.product-01', { y: (matrix.m41 % 768 / 7.68) + "%"});
+    // }, false)
+
+
+    // console.log($('.product-container').slick.$slides.get(index))
+
+    var move = gsap.timeline({ paused: true });
+    // var currentIndex = 
+    move
+        .addLabel('start')
+        .to('.product', .3, {opacity: 0, y: 10, ease: Power2.easeOut, stagger: .05}, 'start')
+        .to('.title', .3, {opacity: 0, scale: .8, ease: Power2.easeOut, stagger: .05}, 'start+=' + .05)
+        .to('.txt-1', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
+        .to('.txt-2', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
+        .to('.tip', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
+
+
+
+    slickContainer.addEventListener('touchmove', function () {
+        
+        move.play();
+    }, false);
+    slickContainer.addEventListener('touchend', function () {
+        var index = document.querySelector('.slick-slide').dataset.slickIndex;
+        console.log(index);
+
+        move.reverse();
+    }, false);
+
     if (document.querySelector('.container-home')) {
         homePage
             .addLabel('start')
@@ -31,7 +80,7 @@ window.onload = function () {
             .to('.top-garlic, .bottom-garlic', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .1)
             .to('.small-logo-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .2)
             .to('.small-logo-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .3)
-            .to('.products-title', .7, {opacity: 1, ease: Power2.easeOut}, 'start+=' + .3)
+            .to('.products-title', .7, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .3)
             .to('.back-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut, stagger: .2 }, 'start+=' + .5)
             .to('.back-link-wrapper', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .6)
             .to('.slick-container', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .5)
@@ -50,7 +99,7 @@ window.onload = function () {
             .to('.top-garlic, .bottom-garlic', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .1)
             .to('.small-logo-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .2)
             .to('.small-logo-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .3)
-            .to('.products-title', .7, {opacity: 1, ease: Power2.easeOut}, 'start+=' + .3)
+            .to('.products-title', .7, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .3)
             .to('.back-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut, stagger: .2 }, 'start+=' + .5)
             .to('.back-link-wrapper', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .6)
 
