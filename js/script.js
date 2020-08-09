@@ -8,18 +8,7 @@ var homePage = gsap.timeline({ paused: true });
 var productsPage = gsap.timeline({ paused: true });
 var boardsPage = gsap.timeline({ paused: true });
 
-$(document).ready(function () {
 
-    $('.slick-container').slick({
-        dots: true,
-        infinite: true,
-        prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
-        nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
-    });
-
-
-
-});
 
 window.onload = function () {
     var slickContainer = document.querySelector('.slick-container');
@@ -35,28 +24,28 @@ window.onload = function () {
 
     // console.log($('.product-container').slick.$slides.get(index))
 
-    var move = gsap.timeline({ paused: true });
-    // var currentIndex = 
-    move
-        .addLabel('start')
-        .to('.product', .3, {opacity: 0, y: 10, ease: Power2.easeOut, stagger: .05}, 'start')
-        .to('.title', .3, {opacity: 0, scale: .8, ease: Power2.easeOut, stagger: .05}, 'start+=' + .05)
-        .to('.txt-1', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
-        .to('.txt-2', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
-        .to('.tip', .3, {opacity: 0, x: 10, stagger: .1}, 'start+=' + .05)
+    // var move = gsap.timeline({ paused: true });
+    // // var currentIndex = 
+    // move
+    //     .addLabel('start')
+    //     .to('.product', .3, { opacity: 0, y: 10, ease: Power2.easeOut, stagger: .05 }, 'start')
+    //     .to('.title', .3, { opacity: 0, scale: .8, ease: Power2.easeOut, stagger: .05 }, 'start+=' + .05)
+    //     .to('.txt-1', .3, { opacity: 0, x: 10, stagger: .1 }, 'start+=' + .05)
+    //     .to('.txt-2', .3, { opacity: 0, x: 10, stagger: .1 }, 'start+=' + .05)
+    //     .to('.tip', .3, { opacity: 0, x: 10, stagger: .1 }, 'start+=' + .05)
 
 
 
-    slickContainer.addEventListener('touchmove', function () {
-        
-        move.play();
-    }, false);
-    slickContainer.addEventListener('touchend', function () {
-        var index = document.querySelector('.slick-slide').dataset.slickIndex;
-        console.log(index);
+    // slickContainer.addEventListener('touchmove', function () {
 
-        move.reverse();
-    }, false);
+    //     move.play();
+    // }, false);
+    // slickContainer.addEventListener('touchend', function () {
+    //     var index = document.querySelector('.slick-slide').dataset.slickIndex;
+    //     console.log(index);
+
+    //     move.reverse();
+    // }, false);
 
     if (document.querySelector('.container-home')) {
         homePage

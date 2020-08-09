@@ -13,7 +13,7 @@
 <body>
     <div class="container container-products">
 
-        
+
         <div class="back-link">
             <div class="back-link-wrapper">
                 <img src="img/back-link.png" class="back-txt-anim">
@@ -132,7 +132,15 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
+        $(document).ready(function () {
 
+            $('.slick-container').slick({
+                dots: true,
+                infinite: true,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+            });
+        });
     </script>
     <script src="js/gsap.js"></script>
     <script src="js/script.js"></script>
