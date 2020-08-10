@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.67 : 10-08-2020
+# v0.68 : 10-08-2020
  
 CACHE:
 # pages
@@ -90,7 +90,7 @@ img/seara-logo-02.png
 img/seara-logo-03.png
 img/sec-logo-01.png
 img/sec-logo-02.png
-favicon.ico
+img/favicon.ico
  
 NETWORK:
 *
