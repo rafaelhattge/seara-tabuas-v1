@@ -234,7 +234,7 @@ p {
   position: absolute;
   width: 100%;
   height: 60vh;
-  top: 58%;
+  top: 52%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -269,7 +269,7 @@ p {
   margin: 0;
   width: 150px;
   position: absolute;
-  bottom: -15%;
+  bottom: -23%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
