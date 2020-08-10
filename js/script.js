@@ -8,7 +8,26 @@ var homePage = gsap.timeline({ paused: true });
 var productsPage = gsap.timeline({ paused: true });
 var boardsPage = gsap.timeline({ paused: true });
 
+$(document).ready(function () {
 
+    if (("standalone" in window.navigator) && window.navigator.standalone) {
+        // For iOS Apps
+        $('a').on('click', function (e) {
+            e.preventDefault();
+            var new_location = $(this).attr('href');
+            if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
+                window.location = new_location;
+            }
+        });
+    }
+
+    $('.slick-container').slick({
+        dots: true,
+        infinite: true,
+        prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+        nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+    });
+});
 
 window.onload = function () {
     var slickContainer = document.querySelector('.slick-container');
