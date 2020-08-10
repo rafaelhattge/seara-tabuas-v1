@@ -14,6 +14,7 @@ $(document).ready(function () {
 window.onload = function () {
     homePage
         .addLabel('start')
+        .to('.emporio-anim', .7,{ opacity: 1, scale: 1, ease: Power2.easeOut}, 'start')
         .to('.apresenta-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .1)
         .to('.flag-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start')
         .to('.txt-mask', 1, { x: "0%", ease: Power2.easeOut }, 'start+=' + .5)
@@ -52,7 +53,7 @@ window.onload = function () {
 try {
     var productsCta = document.querySelector('.produtos-link');
     productsCta.addEventListener('click', function () {
-        gsap.to('.apresenta-anim, .flag-anim, .flag-txt-anim, .sec-logo-anim, .logo-txt-anim, .logo-anim, .home-txt-anim, .tabuas-link-wrapper, .products-anim', .3, { opacity: 0 });
+        gsap.to('.emporio-anim, .apresenta-anim, .flag-anim, .flag-txt-anim, .sec-logo-anim, .logo-txt-anim, .logo-anim, .home-txt-anim, .tabuas-link-wrapper, .products-anim', .3, { opacity: 0 });
         gsap.to('.produtos-link-wrapper', .3, { opacity: 0, delay: .3 });
         setTimeout(function () {
             productsPage.play();
@@ -64,7 +65,7 @@ try {
 try {
     var boardsCta = document.querySelector('.tabuas-link');
     boardsCta.addEventListener('click', function () {
-        gsap.to('.apresenta-anim, .flag-anim, .flag-txt-anim, .sec-logo-anim, .logo-txt-anim, .logo-anim, .home-txt-anim, .produtos-link-wrapper, .products-anim', .3, { opacity: 0 });
+        gsap.to('.emporio-anim, .apresenta-anim, .flag-anim, .flag-txt-anim, .sec-logo-anim, .logo-txt-anim, .logo-anim, .home-txt-anim, .produtos-link-wrapper, .products-anim', .3, { opacity: 0 });
         gsap.to('.tabuas-link-wrapper', .3, { opacity: 0, delay: .3 });
         setTimeout(function () {
             boardsPage.play();

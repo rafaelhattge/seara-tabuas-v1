@@ -29,12 +29,15 @@ body {
   background-color: #1b1512;
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
   overflow: hidden;
   width: 100%;
   height: 100vh;
   max-width: 100%;
   max-height: 100vh;
-  position: fixed;
+  position: relative;
 }
 
 img {
@@ -43,7 +46,10 @@ img {
 }
 
 p {
-  color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
 }
 
 .pos-r {
@@ -67,20 +73,28 @@ p {
   overflow: hidden;
 }
 
+.emporio-logo-wrapper {
+  position: absolute;
+  width: 195px;
+  top: 3vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .apresenta {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   width: 80px;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .flag-container {
   position: absolute;
   width: 100%;
-  top: 10%;
+  top: 14%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -96,14 +110,14 @@ p {
 .secondary-logo-container {
   position: absolute;
   width: 415px;
-  top: 35%;
+  top: 36.5%;
   left: 12%;
 }
 
 .home-seara-logo {
   position: absolute;
-  top: 36%;
-  right: 14%;
+  top: 37.5%;
+  right: 12%;
   width: 113px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -149,9 +163,9 @@ p {
 
 .home-products-container {
   position: absolute;
-  bottom: 4%;
+  bottom: 2%;
   left: 50%;
-  width: 600px;
+  width: 800px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -276,10 +290,16 @@ p {
 }
 
 .slick-dots .slick-active button {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 /* HOME ANIMATIONS */
+.emporio-anim {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+}
+
 .apresenta-anim {
   opacity: 0;
   -webkit-transform: translateY(20px);
@@ -322,7 +342,6 @@ p {
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
 }
-
 
 .produtos-link-wrapper,
 .tabuas-link-wrapper {
