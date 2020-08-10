@@ -3,7 +3,14 @@ var productsPage = gsap.timeline({ paused: true });
 var boardsPage = gsap.timeline({ paused: true });
 
 $(document).ready(function () {
-    $('.slick-container').slick({
+    $('.slick-products').slick({
+        dots: true,
+        infinite: true,
+        prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+        nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+    });
+
+    $('.slick-boards').slick({
         dots: true,
         fade: true,
         infinite: true,
@@ -15,7 +22,7 @@ $(document).ready(function () {
 window.onload = function () {
     homePage
         .addLabel('start')
-        .to('.emporio-anim', .7,{ opacity: 1, scale: 1, ease: Power2.easeOut}, 'start')
+        .to('.emporio-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start')
         .to('.apresenta-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .1)
         .to('.flag-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start')
         .to('.txt-mask', 1, { x: "0%", ease: Power2.easeOut }, 'start+=' + .5)
@@ -32,22 +39,27 @@ window.onload = function () {
 
     productsPage
         .addLabel('start')
+        .to('.container-products', .01, { visibility: "visible", ease: Power2.easeOut }, 'start')
+        .to('.slick-products', .01, { visibility: "visible", ease: Power2.easeOut }, 'start')
         .to('.top-garlic, .bottom-garlic', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .1)
         .to('.small-logo-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .2)
         .to('.small-logo-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .3)
         .to('.products-title', .7, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .3)
         .to('.back-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut, stagger: .2 }, 'start+=' + .5)
         .to('.back-link-wrapper', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .6)
-        .to('.slick-container', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .5)
+        .to('.slick-products', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .5)
 
     boardsPage
         .addLabel('start')
+        .to('.container-boards', .01, { visibility: "visible", ease: Power2.easeOut }, 'start')
+        .to('.slick-boards', .01, { visibility: "visible", ease: Power2.easeOut }, 'start')
         .to('.top-garlic, .bottom-garlic', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .1)
         .to('.small-logo-anim', .7, { opacity: 1, scale: 1, ease: Power2.easeOut }, 'start+=' + .2)
         .to('.small-logo-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut }, 'start+=' + .3)
         .to('.products-title', .7, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .3)
         .to('.back-txt-anim', .7, { opacity: 1, y: 0, ease: Power2.easeOut, stagger: .2 }, 'start+=' + .5)
         .to('.back-link-wrapper', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .6)
+        .to('.slick-boards', .5, { opacity: 1, ease: Power2.easeOut }, 'start+=' + .5)
 }
 
 //EVENTS
@@ -75,16 +87,23 @@ try {
 } catch (err) { }
 
 try {
-    var backCta = document.querySelector('.back-link');
-    backCta.addEventListener('click', function () {
-        productsPage
-            .timeScale(2)
-            .reverse();
-        boardsPage
-            .timeScale(2)
-            .reverse();
-        setTimeout(function () {
-            homePage.restart();
-        }, 900);
-    });
+    document.querySelectorAll('.back-link').forEach(item => {
+        item.addEventListener('click', event => {
+            productsPage
+                .timeScale(2)
+                .reverse();
+            boardsPage
+                .timeScale(2)
+                .reverse();
+            setTimeout(function () {
+                homePage.restart();
+            }, 900);
+        })
+    })
+
+
+    // var backCta = document.querySelector('.back-link');
+    // backCta.addEventListener('click', function () {
+
+    // });
 } catch (err) { }

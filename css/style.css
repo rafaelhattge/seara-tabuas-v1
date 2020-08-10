@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   overflow: hidden;
+  position: fixed;
 }
 
 *,
@@ -27,17 +28,17 @@ ul {
 
 body {
   background-color: #1b1512;
-  background-image: url(../img/home-bg.jpg);
-  background-size: cover;
-  /* background-size: cover; */
-  /* background-position: center; */
-  background-repeat: no-repeat;
   overflow: hidden;
   width: 100%;
   height: 100vh;
   max-width: 100%;
   max-height: 100vh;
-  position: relative;
+  position: fixed;
+  background-image: url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 img {
@@ -71,6 +72,9 @@ p {
   max-width: 100%;
   max-height: 100vh;
   overflow: hidden;
+}
+
+.container-home {
 }
 
 .emporio-logo-wrapper {
@@ -230,7 +234,7 @@ p {
   border-radius: 25px;
 }
 
-.slick-container {
+.slick-products {
   position: absolute;
   width: 100%;
   height: 60vh;
@@ -293,7 +297,26 @@ p {
   background-color: #fff;
 }
 
+/* BOARD STYLES */
+.container-boards {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-boards {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  top: 44%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* HOME ANIMATIONS */
+.container-boards, .container-products {
+  visibility: hidden;
+}
 .emporio-anim {
   opacity: 0;
   -webkit-transform: scale(.8);
@@ -402,6 +425,12 @@ p {
   transform: translateY(8px);
 }
 
-.slick-container {
+.slick-products {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.slick-boards {
+  visibility: hidden;
   opacity: 0;
 }
