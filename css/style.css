@@ -44,6 +44,10 @@ img {
   overflow: hidden;
 }
 
+p {
+  color: #FFF;
+}
+
 .pos-r {
   position: relative;
 }
