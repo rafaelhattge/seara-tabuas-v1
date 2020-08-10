@@ -87,8 +87,8 @@ try {
 } catch (err) { }
 
 try {
-    document.querySelectorAll('.back-link').forEach(item => {
-        item.addEventListener('click', event => {
+    document.querySelectorAll(".back-link").forEach(function (elem) {
+        elem.addEventListener("click", function () {
             productsPage
                 .timeScale(2)
                 .reverse();
@@ -98,8 +98,9 @@ try {
             setTimeout(function () {
                 homePage.restart();
             }, 900);
-        })
-    })
+        });
+    });
+
 
 
     // var backCta = document.querySelector('.back-link');
