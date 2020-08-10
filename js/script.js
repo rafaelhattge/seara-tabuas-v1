@@ -5,6 +5,7 @@ var boardsPage = gsap.timeline({ paused: true });
 $(document).ready(function () {
     $('.slick-container').slick({
         dots: true,
+        fade: true,
         infinite: true,
         prevArrow: "<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
         nextArrow: "<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
