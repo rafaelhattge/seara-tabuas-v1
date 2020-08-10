@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.68 : 10-08-2020
+# v0.70 : 10-08-2020
  
 CACHE:
 # pages
@@ -98,4 +98,3 @@ NETWORK:
 FALLBACK:
 https://rafaelhattge.github.io/seara-tabuas-v1 index.html
 https://rafaelhattge.github.io/seara-tabuas-v1/index.html index.html
-https://rafaelhattge.github.io/favicon.ico favicon.ico
