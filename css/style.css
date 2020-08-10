@@ -33,7 +33,7 @@ body {
   height: 100vh;
   max-width: 100%;
   max-height: 100vh;
-  /* position: fixed; */
+  position: relative;
   background-image: url(../img/home-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
