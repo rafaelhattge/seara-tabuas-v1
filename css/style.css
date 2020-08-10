@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* position: fixed; */
 }
 
@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 img {
@@ -314,9 +314,11 @@ p {
 }
 
 /* HOME ANIMATIONS */
-.container-boards, .container-products {
+.container-boards,
+.container-products {
   visibility: hidden;
 }
+
 .emporio-anim {
   opacity: 0;
   -webkit-transform: scale(.8);
