@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.77 : 10-08-2020
+# v0.84 : 11-08-2020
  
 CACHE:
 # pages
@@ -18,7 +18,13 @@ js/slick.min.js
 # images
 img/apresenta.png
 img/back-link.png
+img/boards-01.png
+img/boards-02.png
+img/boards-03.png
 img/conheca-produtos.png
+img/conheca-tabuas.png
+img/emporio-logo.png
+img/encomenda.png
 img/flag.png
 img/flag-txt.png
 img/garlic-01.png
@@ -33,57 +39,10 @@ img/home-txt-3.png
 img/left-arrow.png
 img/logo-small-01.png
 img/logo-small-02.png
-img/product-01-hero.png
-img/product-01-title.png
-img/product-01-txt-01.png
-img/product-01-txt-02.png
-img/product-01-tip.png
-img/product-02-hero.png
-img/product-02-title.png
-img/product-02-txt-01.png
-img/product-02-tip.png
-img/product-03-hero.png
-img/product-03-title.png
-img/product-03-txt-01.png
-img/product-03-tip.png
-img/product-04-hero.png
-img/product-04-title.png
-img/product-04-txt-01.png
-img/product-04-tip.png
-img/product-05-hero.png
-img/product-05-title.png
-img/product-05-txt-01.png
-img/product-05-tip.png
-img/product-06-hero.png
-img/product-06-title.png
-img/product-06-txt-01.png
-img/product-06-tip.png
-img/product-07-hero.png
-img/product-07-title.png
-img/product-07-txt-01.png
-img/product-07-tip.png
-img/product-08-hero.png
-img/product-08-title.png
-img/product-08-txt-01.png
-img/product-08-tip.png
-img/product-09-hero.png
-img/product-09-title.png
-img/product-09-txt-01.png
-img/product-09-tip.png
-img/product-10-hero.png
-img/product-10-title.png
-img/product-10-txt-01.png
-img/product-10-txt-02.png
-img/product-10-tip.png
-img/product-11-hero.png
-img/product-11-title.png
-img/product-11-txt-01.png
-img/product-11-txt-02.png
-img/product-11-tip.png
-img/product-12-hero.png
-img/product-12-title.png
-img/product-12-txt-01.png
-img/product-12-tip.png
+img/products-01.png
+img/products-02.png
+img/products-03.png
+img/products-04.png
 img/right-arrow.png
 img/seara-logo-01.png
 img/seara-logo-02.png
@@ -97,4 +56,8 @@ NETWORK:
 
 FALLBACK:
 https://rafaelhattge.github.io/seara-tabuas-v1 index.html
+https://rafaelhattge.github.io/seara-tabuas-v1/ index.html
 https://rafaelhattge.github.io/seara-tabuas-v1/index.html index.html
+http://previewer.homologaprojeto.com.br/2020/seara/tabuas-v2 index.html
+http://previewer.homologaprojeto.com.br/2020/seara/tabuas-v2/ index.html
+http://previewer.homologaprojeto.com.br/2020/seara/tabuas-v2/index.html index.html

@@ -39,6 +39,13 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  /* background-image: url(../img/ref-home.jpg);
+  background-image: url(../img/ref-products.jpg);
+  background-image: url(../img/ref-boards.jpg); */
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 img {
@@ -75,12 +82,17 @@ p {
 }
 
 .container-home {
+  background-image: url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .emporio-logo-wrapper {
   position: absolute;
   width: 195px;
-  top: 3vh;
+  top: 5vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -88,7 +100,7 @@ p {
 
 .apresenta {
   position: absolute;
-  top: 15%;
+  top: 17vh;
   left: 50%;
   width: 80px;
   -webkit-transform: translateX(-50%);
@@ -98,7 +110,7 @@ p {
 .flag-container {
   position: absolute;
   width: 100%;
-  top: 14%;
+  top: 16%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -114,13 +126,13 @@ p {
 .secondary-logo-container {
   position: absolute;
   width: 415px;
-  top: 36.5%;
+  top: 38%;
   left: 12%;
 }
 
 .home-seara-logo {
   position: absolute;
-  top: 37.5%;
+  top: 39.4%;
   right: 12%;
   width: 113px;
   -webkit-transform: translateY(-50%);
@@ -131,19 +143,19 @@ p {
   position: absolute;
   width: 424px;
   left: 50%;
-  top: 48.6%;
+  top: 51.6%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .home-link {
   position: absolute;
-  bottom: 33.4%;
+  bottom: 30.5%;
   z-index: 20000;
 }
 
 .produtos-link {
-  left: 9.8%;
+  left: 7.8%;
   z-index: 20000;
 }
 
@@ -155,7 +167,7 @@ p {
 }
 
 .tabuas-link {
-  right: 9.8%;
+  right: 7.8%;
 }
 
 .tabuas-link-wrapper {
@@ -169,7 +181,7 @@ p {
   position: absolute;
   bottom: 2%;
   left: 50%;
-  width: 800px;
+  width: 700px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -189,26 +201,26 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 130px;
+  width: 140px;
 }
 
 .bottom-garlic-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 180px;
+  width: 190px;
 }
 
 .seara-logo-small {
   position: absolute;
   top: 2.7%;
-  right: 6%;
+  right: 4%;
   width: 74px;
 }
 
 .products-page-title {
   position: absolute;
-  top: 13%;
+  top: 12.7%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -218,8 +230,9 @@ p {
 .back-link {
   position: absolute;
   bottom: 2.7%;
-  left: 6.4%;
+  left: 4.9%;
   z-index: 2000;
+  width: 224px;
 }
 
 .product-container {
@@ -238,7 +251,7 @@ p {
   position: absolute;
   width: 100%;
   height: 60vh;
-  top: 54%;
+  top: 53%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -251,17 +264,17 @@ p {
 .slick-next {
   /* color: transparent; */
   position: absolute;
-  top: 43%;
+  top: 51%;
   width: 40px;
 }
 
 .slick-prev {
-  left: 5%;
+  left: 3%;
   z-index: 1;
 }
 
 .slick-next {
-  right: 5%;
+  right: 3%;
 }
 
 .slick-dots {
@@ -273,7 +286,7 @@ p {
   margin: 0;
   width: 150px;
   position: absolute;
-  bottom: -23%;
+  bottom: -22%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -308,10 +321,46 @@ p {
   position: absolute;
   width: 100%;
   height: 60vh;
-  top: 44%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.slick-boards .slick-prev,
+.slick-boards .slick-next {
+  /* color: transparent; */
+  top: 56%;
+}
+
+.slick-boards .slick-dots {
+  bottom: -28.2%;
+}
+
+/* .slick-prev {
+  left: 3%;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 3%;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin: 0;
+  width: 150px;
+  position: absolute;
+  bottom: -41%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  list-style-type: none;
+  outline: none;
+} */
 
 /* HOME ANIMATIONS */
 .container-boards,
